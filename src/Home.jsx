@@ -1,8 +1,19 @@
 import React from 'react'
+import Navbar from './components/navbar';
+import {Link} from 'react-router-dom';
+
 
 const Home = () => {
+
   return (
-    <div>Home</div>
+    <div className='home-container'>
+      <Navbar/>
+      <div className='home-main-section'>
+        <div>
+          <Link to="/BookListing">Go to Book Listing Page</Link>
+        </div>
+      </div>
+    </div>
   )
 }
 
