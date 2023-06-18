@@ -1,6 +1,18 @@
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+In this Project, we have the following Pages:
+1. Home Page
+2. Book List Page
+3. Book Details Page
+4. Cart Items
+features:
+1. You can search for any book from the list.
+2. You can add any book to the cart.
+3. Checkout
+
+# Hosted URL
+https://react-bookstoreapp.web.app/
 
 ## Available Scripts
 
