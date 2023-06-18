@@ -1,8 +1,7 @@
 import React from "react";
-import { Link } from "react-router-dom";
-import BooksData from "./data";
-import style from "./public/CSS/BookListing.module.css";
 import { useState } from "react";
+import style from "./public/CSS/BookListing.module.css";
+import BooksData from "./data";
 import BookCard from "./components/bookCard";
 import Navbar from "./components/navbar";
 import CartItemsList from "./components/CartItemsList";
@@ -12,7 +11,7 @@ const BookListing = () => {
   const [filterTextValue, setFilterTextValue] = useState("all");
   const [query, setQuery] = useState("");
   const [Cart, setCart] = useState([]);
-  const [CartTotal , setCartTotal]= useState(0);
+  const [CartTotal, setCartTotal] = useState(0);
 
   let filterBooksList = BookList.filter((item) => {
     if (filterTextValue === "available") {
@@ -26,20 +25,20 @@ const BookListing = () => {
   function addInCart(newCart) {
     setCart(newCart);
   }
-  function deleteFromCart(newCart , index){  
-    setCart(newCart);    
+  function deleteFromCart(newCart, index) {
+    setCart(newCart);
   }
 
   function onFilterValueChange(e) {
     setFilterTextValue(e.target.value);
   }
-  function updateCartTotal(newCart){
+  function updateCartTotal(newCart) {
     let total = 0;
-    for(let i = 0;i<newCart.length;i++){
-      total= total + newCart[i].price;
+    for (let i = 0; i < newCart.length; i++) {
+      total = total + newCart[i].price;
     }
-    setCartTotal(total) 
- }
+    setCartTotal(total);
+  }
 
   return (
     <div className="BookListing-container">
@@ -63,9 +62,14 @@ const BookListing = () => {
           </select>
         </div>
         {/* Cart Open Button */}
-        <CartItemsList updateCartTotal={updateCartTotal} CartTotal={CartTotal} Cart={Cart} deleteFromCart={deleteFromCart} />
+        <CartItemsList
+          updateCartTotal={updateCartTotal}
+          CartTotal={CartTotal}
+          Cart={Cart}
+          deleteFromCart={deleteFromCart}
+        />
       </div>
-
+      {/* Book list */}
       <div className={style.bookList}>
         {filterBooksList
           .filter((item) => item.title.toLowerCase().includes(query))
