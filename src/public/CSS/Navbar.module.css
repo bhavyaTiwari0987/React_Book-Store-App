@@ -1,0 +1,31 @@
+
+.navComponent{
+    position:sticky;
+    top:0;
+}
+.navComponent ul{
+display: flex;
+gap: 30px;
+background-color:#212529;
+color:#fff;
+padding: 30px;
+justify-content: space-between;
+align-items: center;
+margin: 0;
+}
+.navComponent ul div:nth-child(1){
+    display: flex;
+    gap: 20px;
+}
+.navComponent li{
+    list-style: none;
+    font-size: 30px;
+    color:#fff;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    text-decoration: none;
+}
+.navComponent li a{
+    text-decoration: none;
+    color:#fff;
+    font-family: 'Kalam', cursive;
+}
