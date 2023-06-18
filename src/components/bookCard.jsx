@@ -3,10 +3,11 @@ import style from '../public/CSS/BookCard.module.css';
 import { Link } from 'react-router-dom';
 
 
-function BookCard({ book, Cart, updateCart }) {
+function BookCard({ book, Cart, addInCart , updateCartTotal }) {
   function handleAddToCart(book) {
     const newCart = [...Cart, book];
-    updateCart(newCart);
+    addInCart(newCart);
+    updateCartTotal(newCart);
   }
   return (
     <div className={style.bookCard} key={book.title} >

@@ -59,17 +59,49 @@ button:hover{
 .cartModal div div {
     display: flex;
     flex-direction: column;
+    gap:0;
 
 }
+.cartContent{
+    padding-bottom: 28px;
+    border-bottom: 1px solid #ced4da;
+}
+
 .cartContent button {
-    width:10rem;
+    width:8rem;
     height:3rem;
     border:none;
     background-color: #e03131;
+    font-size: 18px;
+    color:white;
+    letter-spacing: 2px;
+    
 }
 .cartModal div div p {
     margin: 0;
 }
 .cartModal div div p:nth-child(1){
+    font-size: 38px;
+    color:#343a40;
+}
+.cartContent div p:nth-child(3){
+    font-size: 32px;
+    color:#343a40;
+    font-weight: 600;
+}
+.cartTotal{
+    border-top: 2px solid;
+    border-bottom: 2px solid;
+    padding: 10px;
+    color:#343a40;
+    font-size: 22px;
+    display: flex;
+    justify-content: space-between;
+}
+.cartTotal button{
+    padding:10px;
+    border:none;
     font-size: 18px;
+    background-color:#12b886;
+    color:white;
 }

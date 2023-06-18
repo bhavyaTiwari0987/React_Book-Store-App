@@ -5,12 +5,17 @@
     height: 200px;
     /* border: 1px solid gray; */
     display: flex;
+    align-items: center;
     position:relative;
     background-color:#f1f3f5 ;
 }
+.bookCard:hover{
+background-color:#868e96;
+cursor: pointer;
+}
 .bookCard img{
     width: 50%;
-    height: 90%;
+    height: 100%;
 }
 .bookCard p{
     margin:0;
@@ -32,8 +37,12 @@
 font-size: 22px;
 font-weight: bold;
 }
+
 .cardContent div a{
 text-decoration: none;
+color: #ae3ec9;
+font-weight: 700;
+
 }
 .cardContent p + button{
     position: absolute;
