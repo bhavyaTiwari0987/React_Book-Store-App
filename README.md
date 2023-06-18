@@ -6,7 +6,7 @@ In this Project, we have the following Pages:
 2. Book List Page
 3. Book Details Page
 4. Cart Items
-features:
+# Features:
 1. You can search for any book from the list.
 2. You can add any book to the cart.
 3. Checkout
